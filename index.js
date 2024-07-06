@@ -69,6 +69,15 @@ function addOrder() {
         var changeAmount = cashTendered - sum;
         change.value = "Change: Php " + changeAmount.toFixed(2);
     }
+}
+qty1.addEventListener("keyup", addOrder);
+qty2.addEventListener("keyup", addOrder);
+qty3.addEventListener("keyup", addOrder);
+qty4.addEventListener("keyup", addOrder);
+qty5.addEventListener("keyup", addOrder);
+qty6.addEventListener("keyup", addOrder);
+cash.addEventListener("keyup", addOrder);
+
     function checkout() {
       const qty1 = document.getElementById('qty1').value;
       const qty2 = document.getElementById('qty2').value;
@@ -90,12 +99,3 @@ function addOrder() {
       if (qty1 > 0) {
         orderDetails += `${qty1} x Black Heels\n`;
         total +=
-      }
-    }
-qty1.addEventListener("keyup", addOrder);
-qty2.addEventListener("keyup", addOrder);
-qty3.addEventListener("keyup", addOrder);
-qty4.addEventListener("keyup", addOrder);
-qty5.addEventListener("keyup", addOrder);
-qty6.addEventListener("keyup", addOrder);
-cash.addEventListener("keyup", addOrder);
