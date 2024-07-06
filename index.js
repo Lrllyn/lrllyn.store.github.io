@@ -77,25 +77,4 @@ qty4.addEventListener("keyup", addOrder);
 qty5.addEventListener("keyup", addOrder);
 qty6.addEventListener("keyup", addOrder);
 cash.addEventListener("keyup", addOrder);
-
-    function checkout() {
-      const qty1 = document.getElementById('qty1').value;
-      const qty2 = document.getElementById('qty2').value;
-      const qty3 = document.getElementById('qty3').value;
-      const qty4 = document.getElementById('qty4').value;
-      const qty5 = document.getElementById('qty5').value;
-      const qty6 = document.getElementById('qty6').value;
-
-      const price1 = document.getElementById('price1').textContent;
-      const price2 = document.getElementById('price2').textContent;
-      const price3 = document.getElementById('price3').textContent;
-      const price4 = document.getElementById('price4').textContent;
-      const price5 = document.getElementById('price5').textContent;
-      const price6 = document.getElementById('price6').textContent;
-
-      let orderDetails = '';
-      let total = 0;
-
-      if (qty1 > 0) {
-        orderDetails += `${qty1} x Black Heels\n`;
-        total +=
+cashout.addEventListener("keyup",addOrder);
