@@ -26,6 +26,7 @@ var carts = document.getElementById("carts");
 var total = document.getElementById("total");
 var cash = document.getElementById("cash");
 var change = document.getElementById("change");
+var cashout = document.getElemntById("cashout");
 
 function addOrder() {
     carts.textContent = "";
