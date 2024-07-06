@@ -78,4 +78,3 @@ qty4.addEventListener("keyup", addOrder);
 qty5.addEventListener("keyup", addOrder);
 qty6.addEventListener("keyup", addOrder);
 cash.addEventListener("keyup", addOrder);
-cashout.addEventListener("keyup",addOrder);
